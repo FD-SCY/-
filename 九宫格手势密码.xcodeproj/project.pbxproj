@@ -15,6 +15,10 @@
 		BF7E8CE81CDC77D9003E2449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7E8CE61CDC77D9003E2449 /* LaunchScreen.storyboard */; };
 		BF7E8CF31CDC77D9003E2449 /* _______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7E8CF21CDC77D9003E2449 /* _______Tests.m */; };
 		BF7E8CFE1CDC77D9003E2449 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7E8CFD1CDC77D9003E2449 /* _______UITests.m */; };
+		BF7E8D0D1CDC77FB003E2449 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7E8D0C1CDC77FB003E2449 /* CircleView.m */; };
+		BF7E8D101CDC7C7A003E2449 /* NineLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7E8D0F1CDC7C7A003E2449 /* NineLockView.m */; };
+		BF7E8D131CDC831F003E2449 /* circle_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7E8D111CDC831F003E2449 /* circle_normal.png */; };
+		BF7E8D141CDC831F003E2449 /* circle_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7E8D121CDC831F003E2449 /* circle_selected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		BF7E8CF91CDC77D9003E2449 /* 九宫格手势密码UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "九宫格手势密码UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7E8CFD1CDC77D9003E2449 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______UITests.m"; sourceTree = "<group>"; };
 		BF7E8CFF1CDC77D9003E2449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF7E8D0B1CDC77FB003E2449 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		BF7E8D0C1CDC77FB003E2449 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		BF7E8D0E1CDC7C7A003E2449 /* NineLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineLockView.h; sourceTree = "<group>"; };
+		BF7E8D0F1CDC7C7A003E2449 /* NineLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineLockView.m; sourceTree = "<group>"; };
+		BF7E8D111CDC831F003E2449 /* circle_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_normal.png; sourceTree = "<group>"; };
+		BF7E8D121CDC831F003E2449 /* circle_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_selected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,16 @@
 		BF7E8CD71CDC77D9003E2449 /* 九宫格手势密码 */ = {
 			isa = PBXGroup;
 			children = (
+				BF7E8D111CDC831F003E2449 /* circle_normal.png */,
+				BF7E8D121CDC831F003E2449 /* circle_selected.png */,
 				BF7E8CDB1CDC77D9003E2449 /* AppDelegate.h */,
 				BF7E8CDC1CDC77D9003E2449 /* AppDelegate.m */,
 				BF7E8CDE1CDC77D9003E2449 /* ViewController.h */,
 				BF7E8CDF1CDC77D9003E2449 /* ViewController.m */,
+				BF7E8D0B1CDC77FB003E2449 /* CircleView.h */,
+				BF7E8D0C1CDC77FB003E2449 /* CircleView.m */,
+				BF7E8D0E1CDC7C7A003E2449 /* NineLockView.h */,
+				BF7E8D0F1CDC7C7A003E2449 /* NineLockView.m */,
 				BF7E8CE11CDC77D9003E2449 /* Main.storyboard */,
 				BF7E8CE41CDC77D9003E2449 /* Assets.xcassets */,
 				BF7E8CE61CDC77D9003E2449 /* LaunchScreen.storyboard */,
@@ -246,8 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7E8D141CDC831F003E2449 /* circle_selected.png in Resources */,
 				BF7E8CE81CDC77D9003E2449 /* LaunchScreen.storyboard in Resources */,
 				BF7E8CE51CDC77D9003E2449 /* Assets.xcassets in Resources */,
+				BF7E8D131CDC831F003E2449 /* circle_normal.png in Resources */,
 				BF7E8CE31CDC77D9003E2449 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7E8D0D1CDC77FB003E2449 /* CircleView.m in Sources */,
 				BF7E8CE01CDC77D9003E2449 /* ViewController.m in Sources */,
+				BF7E8D101CDC7C7A003E2449 /* NineLockView.m in Sources */,
 				BF7E8CDD1CDC77D9003E2449 /* AppDelegate.m in Sources */,
 				BF7E8CDA1CDC77D9003E2449 /* main.m in Sources */,
 			);
